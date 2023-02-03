@@ -3,7 +3,8 @@ CREATE TABLE users(
     id  PRIMARY KEY UNIQUE,
     name TEXT ,
     email TEXT UNIQUE  ,
-    password TEXT
+    password TEXT,
+    created_at TEXT 
 
 );
 
