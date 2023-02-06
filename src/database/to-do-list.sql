@@ -1,6 +1,6 @@
 -- Active: 1674743571078@@127.0.0.1@3306
 CREATE TABLE users(
-    id  PRIMARY KEY UNIQUE,
+    id  TEXT PRIMARY KEY UNIQUE,
     name TEXT ,
     email TEXT UNIQUE  ,
     password TEXT,
@@ -8,6 +8,7 @@ CREATE TABLE users(
 
 );
 
+DROP TABLE users;
 
 
 CREATE TABLE tasks(
