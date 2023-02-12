@@ -15,7 +15,7 @@ export class UserDatabase extends BaseDataBase{
          if(q){
             const result : UsersDB[] = await BaseDataBase
             .connection(UserDatabase.TABLE_USERS)
-            .where("name", "LIKE", `%${q}%`)
+            
 
 
             usersDB = result

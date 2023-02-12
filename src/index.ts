@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
+import { taskRouter, userRouter } from './router/router'
 
 const app = express()
 
@@ -11,7 +12,7 @@ app.listen(3003, () => {
 })
 
 app.get("/ping", async (req: Request, res: Response) => {
-    try {
+    try {    
         res.status(200).send({ message: "Pong!" })
     } catch (error) {
         console.log(error)
@@ -27,6 +28,9 @@ app.get("/ping", async (req: Request, res: Response) => {
         }
     }
 })
+
+app.use("/users", userRouter);
+app.use("/tasks", taskRouter)
 
 
 
