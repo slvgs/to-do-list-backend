@@ -8,7 +8,7 @@ CREATE TABLE users(
 
 );
 
-DROP TABLE users;
+DROP TABLE tasks;
 
 
 CREATE TABLE tasks(

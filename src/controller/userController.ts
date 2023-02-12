@@ -11,7 +11,7 @@ export class userController{
     public getUsers = async (req:Request, res: Response) => {
 
         try {
-            const q = req.query.q as string | undefined
+           const q = req.query.q as string | undefined
 
             const userDataBase = new UserDatabase()
             const usersDB = await userDataBase.findUsers(q)
